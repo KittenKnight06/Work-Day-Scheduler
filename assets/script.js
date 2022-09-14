@@ -13,20 +13,18 @@ var printTasks = function(){
     $.each(tasks, function(list, arr){
 
         var taskP = $("<p>").addClass("description task-item-" + list).text(arr)
-        
-        // console.log(list)
-        // console.log(taskP);
-
         $("#task-item-" + list).replaceWith(taskP);
     })
  }
 
-
-    
+ //added current date and current time (live).
 var Today = (moment().format("MMMM D, YYYY"))
     $("#currentDay").text(Today);
 
-//color code hours bins
+var timeNow = (moment().format("hh:mm A"))
+    $("#currentTime").text(timeNow);
+
+//color code hours
 var hourAudit =function(){
     var currentHour = moment().hour() 
 
@@ -44,7 +42,6 @@ var hourAudit =function(){
 
 //Task update with click
 $(".taskBin").on("click", "p", function(){
-    // console.log("<p> was clicked");
     var text =$(this)
       .text()
       .trim();
@@ -56,9 +53,8 @@ $(".taskBin").on("click", "p", function(){
      textInput.trigger("focus");
   });
 
-  //Task needs to be updated
+
 $(".taskBin").on("blur", "textarea", function() {
-  //get the textareas; current value/text
     var text = $(this)
       .val()
       .trim();
@@ -73,11 +69,9 @@ $(".taskBin").on("blur", "textarea", function() {
     $(this).replaceWith(taskP);
   });    
 
-  //Save tasks
+  //Save input
   $(".saveBtn").on("click", function(){
-    //   console.log("<save button> was clicked");
       var index = $(".saveBtn").index(this);
-    //   console.log(index)
       tasks[index] = $(this).parent().find(".taskItem").text();
       localStorage.setItem("tasks", JSON.stringify(tasks));
   });

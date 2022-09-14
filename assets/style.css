@@ -14,15 +14,15 @@ textarea {
 }
 
 p{
-  height:100%;
+  height:80%;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
   color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+  border-radius: 1px;
+  border-bottom: 1px solid black;
 }
 
  .description {
@@ -32,11 +32,12 @@ p{
 .time-block {
   text-align: center;
   border-radius: 15px;
+  border-top:1px;
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
+
+  height: 66px;
   border-top: 1px solid white;
 }
 
@@ -48,7 +49,7 @@ p{
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: black;
 }
 
 .present {
