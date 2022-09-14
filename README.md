@@ -4,43 +4,29 @@
 
 ### This workday scheduler demostrate below functionalities:
 
-1. Showing the live current date and time as reference and comparison,
+
+1. Showing the current date and time as reference and comparison,
 2. Allow users to plan and record tasks within the hours blocks,
 3. Workday hours are between 8am and 5pm,
 4. Allow user to save the inputs when clicking the "save" button, inputs will remain when user refresh the page,
-5. The scheduler table is colour coded to visulise the tracking of time, the background color for past event is white, orange for present, and green for future hours within the same workday.
+5. The scheduler table is colour coded to visulise the tracking of time, the background color for past event is grey, orange for present, and green for future hours within the same workday.
 
 ---
 
 ### This project has been deployed to GitHub Pages and the link is as below
 
-[Workday Scheduler URL](https://kittenknight06.github.io/timed-quiz/index.html)
+[Workday Scheduler URL](https://kittenknight06.github.io/Work-Day-Scheduler/)
 
-The cover page is shown as below
+## The cover page is shown as below
 
-![image](assets/pics/cover.png)
+![image](assets/photos/cover.png)
 
-### When clicking the "Start Quiz" button, you will be prompted with a series of 5 multiple-choice questions, and the timer will start, and total 50 seconds are allowed to answer all 5 questions
+---
 
-![image](assets/pics/timer.png)
+### - When clicking the input area on the right side of the hours (i.e. 8:00 AM), user can then type the activities/tasks. 
 
-### When the correct answer is sellected, it will alert with the word "Correct!" and move on to the next question. 
+### - When user finishes typing the words, and then click the "save button" on the right for each of the rows that requires saving, the input will then be saved and remain when user refresh the page.
 
-![image](assets/pics/correct.png)
+![image](assets/photos/saved-tasks.png)
 
-### When the wrong answer is sellected, it will alert with the word "Wrong!" and move on to the next question, 5 seconds of time will also be deducted from the remaining allowed time as penalty.
-
-![image](assets/pics/wrong.png)
-
-### When all completed, the remained seconds will be displayed as final score, and the application will ask you to enter the initials for tracking the scores (not mandatory).
-
-![image](assets/pics/alldone.png)
-
-### Note, if the quiz is not finished within the given time, this page will show a final score of 0, with the word "Time's up!" on the top-right corner.
-
-![image](assets/pics/times-up.png)
-
-
-### A new page will be displayed to show the saved score after clicking "Submit". Users can choose to either clear the scores, and/or go back to the quiz to re-attempt.
-
-![image](assets/pics/savedscores.png)
+### Given that the time of the screenshot was at 11:14 PM and all hours on the table were "past hours", therefore the background color of the rows are grey.
